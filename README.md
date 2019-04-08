@@ -65,7 +65,7 @@ xkb_symbols "azerty_afnor" {
     key <AE03>  { [ egrave,         3,              dead_grave,     Egrave            ] };
     key <AE04>  { [ ecircumflex,    4,              ampersand,      Ecircumflex       ] };
     key <AE05>  { [ parenleft,      5,              bracketleft,    dead_doubleacute  ] };
-    key <AE06>  { [ parentright,    6,              bracketright,   dead_doublegrave  ] };
+    key <AE06>  { [ parenright,     6,              bracketright,   dead_doublegrave  ] };
     key <AE07>  { [ U2018,          7,              dead_macron                       ] };
     key <AE08>  { [ U2019,          8,              underscore,     U2014             ] };
     key <AE09>  { [ guillemotleft,  9,              U201c,          U2039             ] };
@@ -89,7 +89,7 @@ xkb_symbols "azerty_afnor" {
 
     // Third row
     key <AC01>  { [ q,          Q,  U03B8,  U0398                       ] };
-    key <AC02>  { [ s,          S,  sharp,  U1e9e                       ] };
+    key <AC02>  { [ s,          S,  ssharp, Ssharp                      ] };
     key <AC03>  { [ d,          D,  dollar                              ] };    
     key <AC04>  { [ f,          F                                       ] };
     key <AC05>  { [ g,          G                                       ] };
@@ -109,7 +109,7 @@ xkb_symbols "azerty_afnor" {
     key <AB04>  { [ v,          V,          dead_cedilla,   dead_ogonek    ] };    
     key <AB05>  { [ b,          B,          dead_stroke                    ] };
     key <AB06>  { [ n,          N,          dead_tilde                     ] };
-    key <AB07>  { [ dot,        question,   questiondown                   ] };
+    key <AB07>  { [ period,     question,   questiondown                   ] };
     key <AB08>  { [ comma,      exclam,     exclamdown,     dead_belowcomma] };
     key <AB09>  { [ colon,      ellipsis,   periodcentered                 ] };
     key <AB10>  { [ semicolon,  equal,      U2243,          notequal       ] };
