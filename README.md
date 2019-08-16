@@ -17,24 +17,35 @@ La touche Mode symbole monétaire (`ALT + F`) permet d'accéder à des caractèr
 La touche Mode symbole micro (`ALT + G`) permet d'accéder à plusieurs lettre grecques, utiles notamment pour l'écriture scientifique.
 La touche Mode symbole européen (`ALT + H`) permet d'accéder à plusieurs caractères utilisés dans les langues latines européennes.
 
-### Versions v1.0
+### v0.2
+- Ajout des modes monétaire, grec et européens grâce à la touche Compose. À ce stade certains caractères restent incorrects.
+- Début de la réécriture de la documentation
+- Des questions subsistent concernant l'interprétation de certains caractères
+
+### Vers une version v1.0
 Pour une version complète il faudrait :
- - [ ] Implémenter le mode monétaire
- - [ ] Implémenter le mode micro
- - [ ] Implémenter le mode européen
+ - [x] Implémenter le mode monétaire
+ - [x] Implémenter le mode micro
+ - [x] Implémenter le mode européen
  - [ ] Voir s'il est nécessaire de distinguer le symbole `TRAIT D'UNION` du symbole `MOINS`
  - [ ] Voir s'il est nécessaire de distinguer le symbole `BARRE COUVRANTE` du symbole `BARRE OBLIQUE COUVRANTE`
- - [ ] Changer le . en un vrai DOT BELOW dans la représentation (touche I)
+ - [ ] Changer le . en un vrai DOT BELOW dans le layout overview (touche I)
  - [x] Pour plus de propreté, changer les tabulations en espaces
+ - [ ] Une vraie documentation complète
+ - [ ] Ajouter un layout overview pour chaque mode 
 
 ## Installation
-
 L'installation se fait en deux étapes.
 
 ### Les symboles de base
 Le fichier d'origine se trouve sur `/usr/share/X11/xkb/symbols/fr`. Il est certainement standard (cette information n'est pas vérifiée) et provient initialement d'une installation de Linux Mint 19.1. Il s'est vu ajouté le contenu de [fr_azerty_afnor](fr_azerty_afnor). Libre à vous d'écraser votre fichier `fr` ou d'ajouter la contenu de `fr_azerty_afnor` de ce même fichier.
 
 ### Les symboles des modes
+Pour le moment, le meilleur moyen que je connaisse d'implémenter les modes est d'utiliser la touche Compose. La touche compose propose déjà plusieurs combinaison possible visibles par exemple sur [la documentation francophone d'Ubuntu](https://doc.ubuntu-fr.org/caracteres_etendus).
+Il est possible de créer ses propres touches combinaisons grâce au fichier `~/.XCompose`. Vous pouvez copier le fichier `XCompose` de ce dépôt dans votre dossier home et ajouter un point au début de son nom.
+Une fois installé, il faut redémarrer un logiciel pour que le fichier XCompose soit pris en compte.
 
+Il est possible d'assigner une touche Compose grâce aux options du clavier. Toutefois, la touche Compose a été ajoutée sur `AltGr+F`, `AltGr+G` et `AltGr+H`. Ce qui oblige de rappuyer sur <g>, par exemple, puis <D> pour obtenir le caractère Δ (delta majuscule).
 
-- Just restart
+## Retours
+Je suis preneurs de toutes pull requests, retour, suggestions et autres afin d'améliorer cette implémentation et la rendre la plus proche possible de la norme de l'AFNOR.

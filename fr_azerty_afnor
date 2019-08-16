@@ -40,26 +40,26 @@ xkb_symbols "azerty_afnor" {
     key <AE12>  { [ dead_circumflex,dead_diaeresis, dead_caron                        ] };
 
     // Second row
-    key <AD01>  { [ a,        A,            ae,             AE          ] };
-    key <AD02>  { [ z,        Z,            sterling                    ] };
-    key <AD03>  { [ e,        E,            EuroSign                   ] };    
+    key <AD01>  { [ a,        A,          ae,             AE           ] };
+    key <AD02>  { [ z,        Z,          sterling                     ] };
+    key <AD03>  { [ e,        E,          EuroSign,       E            ] };
     key <AD04>  { [ r,        R,          registered                   ] };
     key <AD05>  { [ t,        T,          braceleft,      U2122        ] };
     key <AD06>  { [ y,        Y,          braceright                   ] };    
     key <AD07>  { [ u,        U,          ugrave,         Ugrave       ] };    
     key <AD08>  { [ i,        I,          dead_abovedot,  dead_belowdot] };    
-    key <AD09>  { [ o,        O,          oe,              OE            ] };    
+    key <AD09>  { [ o,        O,          oe,             OE           ] };    
     key <AD10>  { [ p,        P,          percent,        U2030        ] };
     key <AD11>  { [ minus,    U2013,      minus,          U2011        ] };
-    key <AD12>  { [ plus,    plusminus,    U2020,          U2021       ] };    
+    key <AD12>  { [ plus,     plusminus,  U2020,          U2021        ] };    
 
     // Third row
     key <AC01>  { [ q,          Q,  U03B8,  U0398                       ] };
     key <AC02>  { [ s,          S,  ssharp, Ssharp                      ] };
     key <AC03>  { [ d,          D,  dollar                              ] };    
-    key <AC04>  { [ f,          F                                       ] };
-    key <AC05>  { [ g,          G                                       ] };
-    key <AC06>  { [ h,          H ] };
+    key <AC04>  { [ f,          F,  Multi_key                           ] };
+    key <AC05>  { [ g,          G,  Multi_key                           ] };
+    key <AC06>  { [ h,          H,  Multi_key                           ] };
     key <AC07>  { [ j,          J                                       ] };
     key <AC08>  { [ k,          K,  dead_stroke                         ] };
     key <AC09>  { [ l,          L,  bar                                 ] };
