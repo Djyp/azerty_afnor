@@ -34,8 +34,8 @@ include "%L"
 <Multi_key> <f> <ccedilla> : "₢"
 <Multi_key> <f> <Cedilla> : "₵"
 <Multi_key> <f> <b> : "₿"
-# Symbole à corriger ৵
-<Multi_key> <f> <B> : "৵"
+# Symbole à revoir 
+<Multi_key> <f> <B> : "฿"
 <Multi_key> <f> <n> : "₦"
 
 # Symboles grecs
