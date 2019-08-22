@@ -11,16 +11,21 @@ Pour cette v0.1, il manque encore quelques aspects. Je partage mon implémentati
 
 ## Versions
 
-### v0.1
+### v0.1 - 08.04.19
 Implémentation rapide d'une base. Toutes les touches fonctionnent avec les combinaisons `SHIFT`, `ALT`, `SHIFT + ALT` sauf les touches MODE. Elles doivent permettre d'accéder à des symboles supplémentaires.
 La touche Mode symbole monétaire (`ALT + F`) permet d'accéder à des caractères monétaires moins utilisés en Europe. £, $ et € sont bien sûr accessibles sans cette touche.
 La touche Mode symbole micro (`ALT + G`) permet d'accéder à plusieurs lettre grecques, utiles notamment pour l'écriture scientifique.
 La touche Mode symbole européen (`ALT + H`) permet d'accéder à plusieurs caractères utilisés dans les langues latines européennes.
 
-### v0.2
+### v0.2 - 16.08.19
 - Ajout des modes monétaire, grec et européens grâce à la touche Compose. À ce stade certains caractères restent incorrects.
 - Début de la réécriture de la documentation
 - Des questions subsistent concernant l'interprétation de certains caractères
+
+### v0.3 - 21.08.19
+- Corrections du mode grec (ajout de lettres, correction du sigma final)
+- Corrections de certains caractères du mode européen
+- Ajout d'une Licence MIT
 
 ### Vers une version v1.0
 Pour une version complète il faudrait :
