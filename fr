@@ -1124,7 +1124,7 @@ xkb_symbols "azerty_afnor" {
     key <AD08>  { [ i,        I,          dead_abovedot,  dead_belowdot] };    
     key <AD09>  { [ o,        O,          oe,             OE           ] };    
     key <AD10>  { [ p,        P,          percent,        U2030        ] };
-    key <AD11>  { [ minus,    U2013,      minus,          U2011        ] };
+    key <AD11>  { [ minus,    U2013,      U2212,          U2011        ] };
     key <AD12>  { [ plus,     plusminus,  U2020,          U2021        ] };    
 
     // Third row
