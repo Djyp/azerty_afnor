@@ -50,7 +50,7 @@ Pour le moment, le meilleur moyen que je connaisse d'implémenter les modes est 
 Il est possible de créer ses propres touches combinaisons grâce au fichier `~/.XCompose`. Vous pouvez copier le fichier `XCompose` de ce dépôt dans votre dossier home et ajouter un point au début de son nom.
 Une fois installé, il faut redémarrer un logiciel pour que le fichier XCompose soit pris en compte.
 
-Il est possible d'assigner une touche Compose grâce aux options du clavier. Toutefois, la touche Compose a été ajoutée sur `AltGr+F`, `AltGr+G` et `AltGr+H`. Ce qui oblige de rappuyer sur <g>, par exemple, puis <D> pour obtenir le caractère Δ (delta majuscule).
+Il est possible d'assigner une touche Compose grâce aux options du clavier. Toutefois, la touche Compose a été ajoutée sur `AltGr+F`, `AltGr+G` et `AltGr+H`. Ce qui oblige de rappuyer sur <kbd>g</kbd>, par exemple, puis <kbd>D</kbd> pour obtenir le caractère Δ (delta majuscule).
 
 ## Retours
 Je suis preneurs de toutes pull requests, retour, suggestions et autres afin d'améliorer cette implémentation et la rendre la plus proche possible de la norme de l'AFNOR.
