@@ -40,10 +40,30 @@ Pour une version complète il faudrait :
  - [ ] Ajouter un layout overview pour chaque mode 
 
 ## Installation
-L'installation se fait en deux étapes.
+L'installation se fait en trois étapes.
 
 ### Les symboles de base
-Le fichier d'origine se trouve sur `/usr/share/X11/xkb/symbols/fr`. Il est certainement standard (cette information n'est pas vérifiée) et provient initialement d'une installation de Linux Mint 19.1. Il s'est vu ajouté le contenu de [fr_azerty_afnor](fr_azerty_afnor). Libre à vous d'écraser votre fichier `fr` ou d'ajouter la contenu de `fr_azerty_afnor` de ce même fichier.
+Le fichier d'origine se trouve sur `/usr/share/X11/xkb/symbols/fr`. Il est certainement standard (cette information n'est pas vérifiée) et provient initialement d'une installation de Linux Mint 19.1. Il s'est vu ajouté le contenu de [fr_azerty_afnor](fr_azerty_afnor). Libre à vous d'écraser votre fichier `fr` ou d'ajouter la contenu de `fr_azerty_afnor` de ce même fichier. Il est inutile de créer un fichier `/usr/share/X11/xkb/symbols/fr_azerty_afnor`, ce dossier attend plutôt des fichiers nommé avec deux lettres représentant un pays.
+
+### Ajouter la disposition dans la liste du système
+Le fichier `/usr/share/X11/xkb/rules/evdev.xml` liste tous les agencements disponibles. Il associe le nom de la disposition (ici `azerty_afnor`) avec la langue (`fr`) et le nom du clavier (`Français (Azerty AFNOR)`).
+Vous pouvez remplacer le votre par celui de de dépôt ou ajouter le contenur de `evdev_afnor_extract.xml`. Pour savoir où ajouter ces quelques lignes dans `evdev.xml`, il faut l'ajouter sous …
+```
+    <layout>
+      <configItem>
+        <name>fr</name>
+        
+        <shortDescription>fr</shortDescription>
+        <description>French</description>
+        <languageList>
+          <iso639Id>fra</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+```
+… et à côté des autres variantes. Je l'ai placée sous la variante French (Breton) mais elle aurait pu être n'importe où.
+
+> Si vous vous demandez pourquoi j'ai écrit «Français» au lieu de «French» c'est parce qu'en écrivant «French», ce mot n'était pas traduit dans la liste. J'ignore pourquoi mais au moins là on lit bien le nom de l'agencement en français.
 
 ### Les symboles des modes
 Pour le moment, le meilleur moyen que je connaisse d'implémenter les modes est d'utiliser la touche Compose. La touche compose propose déjà plusieurs combinaison possible visibles par exemple sur [la documentation francophone d'Ubuntu](https://doc.ubuntu-fr.org/caracteres_etendus).
@@ -51,6 +71,9 @@ Il est possible de créer ses propres touches combinaisons grâce au fichier `~/
 Une fois installé, il faut redémarrer un logiciel pour que le fichier XCompose soit pris en compte.
 
 Il est possible d'assigner une touche Compose grâce aux options du clavier. Toutefois, la touche Compose a été ajoutée sur `AltGr+F`, `AltGr+G` et `AltGr+H`. Ce qui oblige de rappuyer sur <g>, par exemple, puis <D> pour obtenir le caractère Δ (delta majuscule).
+
+### Attention ! :warning:
+Méfiez-vous des mises à jour. Cette dispostion sera peut-être un jour officiellement dans les distributions Linux mais en attendant, comme vous modifiez directement les fichiers, certains mises à jour peuvent écraser les deux fichiers `/usr/share/X11/xkb/rules/evdev.xml` et `/usr/share/X11/xkb/symbols/fr` ! Il faudra refaire la manip.
 
 ## Retours
 Je suis preneurs de toutes pull requests, retour, suggestions et autres afin d'améliorer cette implémentation et la rendre la plus proche possible de la norme de l'AFNOR.
