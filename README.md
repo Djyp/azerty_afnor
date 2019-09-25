@@ -32,7 +32,7 @@ Pour une version complète il faudrait :
  - [x] Implémenter le mode monétaire
  - [x] Implémenter le mode micro
  - [x] Implémenter le mode européen
- - [ ] Voir s'il est nécessaire de distinguer le symbole `TRAIT D'UNION` du symbole `MOINS`
+ - [x] Voir s'il est nécessaire de distinguer le symbole `TRAIT D'UNION` du symbole `MOINS`
  - [ ] Voir s'il est nécessaire de distinguer le symbole `BARRE COUVRANTE` du symbole `BARRE OBLIQUE COUVRANTE`
  - [ ] Changer le . en un vrai DOT BELOW dans le layout overview (touche I)
  - [x] Pour plus de propreté, changer les tabulations en espaces
