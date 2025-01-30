@@ -9,10 +9,10 @@ La doc de xkb étant ce qu'elle est, j'ai fait de mon mieux. Je me suis basé su
 J'ai copié-collé une disposition existante dans le fichier `/usr/share/X11/xkb/symbols/fr` que j'ai adaptée.
 Je partage mon implémentation avec le monde francophone, notamment pour ceux qui voudront terminer le travail.
 
-Depuis octobre 2019, une implémentation de cette disposition existe dans toutes les distributions linux qui utilisent version ≥ 2.28 de [xkeyboard-config](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config). On peut donc dire à ce jour qu'elle est disponible partoutn
+Depuis octobre 2019, une implémentation de cette disposition existe dans toutes les distributions linux qui utilisent version ≥ 2.28 de [xkeyboard-config](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config). On peut donc dire à ce jour qu'elle est disponible partout.
 N'utilisez ma version que si vous souhaitez l'ajouter à un système plus ancien.
 
-À ce jour, le 30 janvier 2025, quelques défauts apparaissent dans la version distribuée, notamment sur les trois touches MODE qui permettent d'accéder au mode monétaire, au mode lettres grecques et au mode caractères européens. Je souhaite donc documenter tout ce que je peux pour implémenter ces trois modes quitte à le faire avec XCompose.
+À ce jour, le 30 janvier 2025, [quelques défauts apparaissent dans la version distribuée](Implémentation%20actuelle%20dans%20Linux.md), notamment sur les trois touches MODE qui permettent d'accéder au mode monétaire, au mode lettres grecques et au mode caractères européens. Je souhaite donc documenter tout ce que je peux pour implémenter ces trois modes quitte à le faire avec XCompose.
 
 ## Installer la disposition pour Linux
 
